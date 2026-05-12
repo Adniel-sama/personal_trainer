@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Max Power</title>
 
+
   <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -30,39 +27,22 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-
       <a class="navbar-brand" href="#">
-
-        <img
-          src="logo.png"
-          alt="Logo"
-          class="brand-logo"
-          id="brandLogo"
-        />
-
+        <img src="logo.png" alt="Logo" class="brand-logo" id="brandLogo" />
         <div class="brand-fallback" id="brandFallback">
           Mx P
         </div>
-
         <span class="brand-name">
           Max Power
         </span>
-
       </a>
-
-      <button
-        class="navbar-toggler border-0"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-      >
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarContent"
-      >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
 
         <ul class="navbar-nav gap-lg-4">
 
@@ -227,11 +207,8 @@
 
         <div class="col-lg-6">
 
-          <img
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"
-            alt="Trainer"
-            class="about-image"
-          />
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"
+            alt="Trainer" class="about-image" />
 
         </div>
 
@@ -351,52 +328,85 @@
 
       <div class="contact-box">
 
-        <h2 class="section-title mb-3">
-          Comienza hoy
-        </h2>
+        <div class="row g-5 align-items-center">
 
-        <p class="mb-5">
-          Agenda una evaluación inicial y construyamos
-          un plan alineado con tus objetivos.
-        </p>
+          <!-- LEFT -->
 
-        <div class="row g-4">
+          <div class="col-lg-5">
 
-          <div class="col-lg-6">
+            <h2 class="section-title mb-3">
+              Comienza hoy
+            </h2>
 
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nombre"
-            />
+            <p class="mb-4">
+              Agenda una evaluación inicial y construyamos
+              un plan alineado con tus objetivos.
+            </p>
 
-          </div>
+            <!-- WHATSAPP -->
 
-          <div class="col-lg-6">
+            <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-btn">
+              Contactar por WhatsApp
+            </a>
 
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Correo electrónico"
-            />
+            <div class="contact-info mt-5">
 
-          </div>
+              <p>
+                Santiago, Chile
+              </p>
 
-          <div class="col-12">
+              <p>
+                Max@power.com
+              </p>
 
-            <textarea
-              rows="5"
-              class="form-control"
-              placeholder="Cuéntame tus objetivos"
-            ></textarea>
+            </div>
 
           </div>
 
-          <div class="col-12">
+          <!-- RIGHT -->
 
-            <button class="btn btn-light rounded-pill px-4 py-3 fw-semibold">
-              Enviar solicitud
-            </button>
+          <div class="col-lg-7">
+
+            <!-- GOOGLE FORM -->
+
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSc7eNhkPt_F6E5Vdg6lgny0-TzG5aXJB_fGOXUL5KQUHKYHhA/formResponse"
+              method="POST" target="_blank">
+
+              <div class="row g-4">
+
+                <div class="col-md-6">
+
+                  <input type="text" name="entry.461785337" class="form-control" placeholder="Nombre"
+                    required />
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <input type="email" name="entry.50471819" class="form-control"
+                    placeholder="Correo electrónico" required />
+
+                </div>
+
+                <div class="col-12">
+
+                  <textarea rows="5" name="entry.948629868" class="form-control"
+                    placeholder="Cuéntame tus objetivos" required></textarea>
+
+                </div>
+
+                <div class="col-12">
+
+                  <button type="submit" class="btn btn-light rounded-pill px-4 py-3 fw-semibold">
+                    Enviar solicitud
+                  </button>
+
+                </div>
+
+              </div>
+
+            </form>
 
           </div>
 
@@ -414,9 +424,29 @@
 
     <div class="container">
 
-      <p>
-        © 2026 Max Power
-      </p>
+      <div class="footer-content">
+
+        <p>
+          © 2026 Max Power
+        </p>
+
+        <div class="socials">
+
+          <a href="https://instagram.com/" target="_blank" class="social-link">
+            Instagram
+          </a>
+
+          <a href="https://tiktok.com/" target="_blank" class="social-link">
+            TikTok
+          </a>
+
+          <a href="https://youtube.com/" target="_blank" class="social-link">
+            YouTube
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -429,4 +459,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -369,9 +369,10 @@
 
             <!-- GOOGLE FORM -->
 
-            <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSc7eNhkPt_F6E5Vdg6lgny0-TzG5aXJB_fGOXUL5KQUHKYHhA/formResponse"
-              method="POST" target="hidden_iframe"
-              onsubmit="setTimeout(() => document.getElementById('contactForm').reset(), 500);">
+            <form id="contactForm"
+              action="https://docs.google.com/forms/d/e/ID_FORMULARIO/formResponse"
+              method="POST"
+              target="hidden_iframe">
 
               <div class="row g-4">
 
@@ -399,8 +400,21 @@
               </div>
 
             </form>
-
             <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+            <!-- MENSAJE DE ÉXITO -->
+            <div id="success-message" class="text-center py-5 d-none">
+
+              <h3 class="fw-bold mb-3">
+                ✅ Solicitud enviada
+              </h3>
+
+              <p class="text-light mb-0">
+                Gracias por contactarme. Te responderé pronto.
+              </p>
+
+            </div>
+            
 
 
           </div>
